@@ -1,0 +1,10 @@
+$num01: 7;
+$num02: 12;
+
+h1:nth-child(1)::before{
+    content: if($num01 < 10, '0' + $num01, '' + $num01);
+}
+
+h1:nth-child(2)::before{
+    content: if($num02 < 10, '0' + $num02, '' + $num02);
+}

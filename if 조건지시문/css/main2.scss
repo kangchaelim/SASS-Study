@@ -1,0 +1,26 @@
+$num01: 7;
+$num02: 12;
+$num03: 25;
+
+h1:nth-child(1)::before{
+    @if($num01 < 10){
+        content: '0' + $num01;
+    }
+}
+
+h1:nth-child(2)::before{
+    @if($num02 < 10){
+        content: '0' + $num02;
+    }@else{
+        content: '' + $num02;
+    }
+}
+h1:nth-child(3)::before{
+    @if($num03 < 10){
+        content: '0' + $num02;
+    }@else if($num03 > 20){
+        content: '20번까지만 가능합니다.'
+    }@else{
+        content: '' + $num02;
+    }
+}

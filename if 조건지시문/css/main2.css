@@ -1,0 +1,12 @@
+@charset "UTF-8";
+h1:nth-child(1)::before {
+  content: "07";
+}
+
+h1:nth-child(2)::before {
+  content: "12";
+}
+
+h1:nth-child(3)::before {
+  content: "20번까지만 가능합니다.";
+}/*# sourceMappingURL=main2.css.map */
