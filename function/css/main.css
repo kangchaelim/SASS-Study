@@ -1,0 +1,20 @@
+.boxwrap {
+  width: 1180px;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+.boxwrap .box1 {
+  width: 98.3333333333px;
+  height: 100px;
+  background-color: red;
+}
+.boxwrap .box2 {
+  width: 393.3333333333px;
+  height: 100px;
+  background-color: green;
+}
+.boxwrap .box3 {
+  width: 590px;
+  height: 100px;
+  background-color: blue;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #749afd;
+  color: #fff;
+}
+button:nth-child(1) {
+  background-color: #d9e3fe;
+}
+button:nth-child(3) {
+  background-color: #0f51fc;
+}
+button:nth-child(4) {
+  opacity: 0.5;
+}/*# sourceMappingURL=main.css.map */

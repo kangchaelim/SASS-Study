@@ -1,0 +1,27 @@
+$mainColor: #749afd;
+
+// 함수선언
+@function myLighten($num){
+    @return 0.1 * $num;
+}
+
+button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: $mainColor;
+    color: #fff;
+
+    // lighten(색상, 정도)
+    &:nth-child(1) {
+        background-color: lighten($mainColor, 20%);
+    }
+    // darken(색상, 정도)
+    &:nth-child(3) {
+        background-color: darken($mainColor, 20%);
+    }
+    // 사용자정의함수
+    &:nth-child(4) {
+        opacity: myLighten(5);
+    }
+}

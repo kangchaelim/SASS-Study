@@ -1,0 +1,30 @@
+// boxwrap의 가로 사이즈를 담은 변수
+$max-width :1180px;
+
+// 12columns grid
+// 함수선언
+@function columns($number: 1, $all: 12){
+    @return $max-width * ($number / $all);
+}
+
+.boxwrap {
+    width: $max-width;
+    margin: 0 auto;
+    border: 3px solid black;
+
+    .box1 {
+        width: columns(); // 인수생략 -1 컬럼 - 1/12
+        height: 100px;
+        background-color: red;
+    }
+    .box2 {
+        width: columns(4); 
+        height: 100px;
+        background-color: green;
+    }
+    .box3 {
+        width: columns(6, 12);
+        height: 100px;
+        background-color: blue;
+    }
+}
